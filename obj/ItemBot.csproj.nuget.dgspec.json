@@ -132,6 +132,10 @@
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.111, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

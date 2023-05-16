@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DiscordBot;
 using RedisKey = DiscordBot.RedisKey;
+using System.Configuration;
 
 namespace ItemBot
 {
@@ -160,11 +161,9 @@ namespace ItemBot
 
         public override ulong getChannelId()
         {
-            // 섬멸 - 뽑기
-            ulong channelId = 1044924809156493394;
-            // 동화 - 아이템
-            //ulong channelId = 1108046986764095508;
-
+            var chanelIdStr = ConfigurationManager.AppSettings["itemChannelId"];
+            ulong channelId;
+            ulong.TryParse(chanelIdStr, out channelId);
             return channelId;
         }
     }

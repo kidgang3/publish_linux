@@ -15,9 +15,9 @@ namespace ItemBot
         public override ulong getChannelId()
         {
             // 섬멸 - 뽑기
-            ulong channelId = 1044924809156493394;
+            //ulong channelId = 1044924809156493394;
             // 동화 - 아이템
-            //ulong channelId = 1108046986764095508;
+            ulong channelId = 1108046986764095508;
 
             return channelId;
         }
