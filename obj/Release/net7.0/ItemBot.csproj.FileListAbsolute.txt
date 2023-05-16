@@ -31,3 +31,17 @@ D:\source\ItemBot\obj\Release\net7.0\refint\ItemBot.dll
 D:\source\ItemBot\obj\Release\net7.0\ItemBot.pdb
 D:\source\ItemBot\obj\Release\net7.0\ItemBot.genruntimeconfig.cache
 D:\source\ItemBot\obj\Release\net7.0\ref\ItemBot.dll
+D:\source\ItemBot\bin\Release\net7.0\ItemBot.dll.config
+D:\source\ItemBot\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Diagnostics.EventLog.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Drawing.Common.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Security.Permissions.dll
+D:\source\ItemBot\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\source\ItemBot\bin\Release\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
