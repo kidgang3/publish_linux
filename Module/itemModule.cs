@@ -56,7 +56,7 @@ namespace ItemBot
             StringBuilder sb = new StringBuilder();
             sb.Append("```scss");
             sb.Append("\n");
-            sb.Append("등록 물품 : " + itemName + "(입찰가 : " + price);
+            sb.Append("등록 물품 : " + itemName + "(입찰가 : " + price + ")");
             sb.Append("\n");
             sb.Append("입찰 마감 : " + expireTime.ToString("HH:mm:ss"));
             sb.Append("\n");

@@ -125,6 +125,34 @@ namespace ItemBot
         public override async Task ButtonHandler(SocketMessageComponent component)
         {
             var customId = component.Data.CustomId;
+
+            if (_client == null)
+                return;
+
+            var user = ((SocketGuildUser)component.User);
+
+            var nickNameData = RedisDBManager.Instance.HashGet(RedisKey.NickNameByUserId.ToString(), user.Id.ToString());
+            if (nickNameData == null)
+            {
+                RedisDBManager.Instance.HashSet(RedisKey.NickNameByUserId.ToString(), user.Id.ToString(), user.DisplayName);
+                nickNameData = user.DisplayName;
+            }
+            else
+            {
+                if (user.DisplayName != nickNameData)
+                {
+                    RedisDBManager.Instance.HashDel(RedisKey.UserIdByNickName.ToString(), nickNameData);
+                    RedisDBManager.Instance.HashSet(RedisKey.UserIdByNickName.ToString(), user.DisplayName, user.Id.ToString());
+
+                    nickNameData = user.DisplayName;
+                }
+            }
+
+            var UserIdData = RedisDBManager.Instance.HashGet(RedisKey.UserIdByNickName.ToString(), nickNameData);
+            if (UserIdData == null)
+            {
+                RedisDBManager.Instance.HashSet(RedisKey.UserIdByNickName.ToString(), user.DisplayName, user.Id.ToString());
+            }
         }
 
         public static Embed getEmbed(string message)
